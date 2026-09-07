@@ -18,7 +18,7 @@ export const days: Day[] = [
   [{name:'Trompeta',start:'16:30',end:'21:30',note:'10 clases de 30 min'}]
  ]},
  {name:'Jueves',rooms:[
-  [{name:'Bebés',start:'16:45',end:'17:30',kind:'early'},{name:'TBN/PIANO',start:'17:30',end:'20:00',note:'5 clases de 30 min'},{name:'Coro',start:'20:00',end:'22:00',kind:'ensemble'}],[],[]
+  [{name:'Bebés',start:'16:45',end:'17:30',kind:'early'},{name:'Trombón',start:'17:30',end:'20:00',note:'5 clases de 30 min'},{name:'Coro',start:'20:00',end:'22:00',kind:'ensemble'}],[],[]
  ]},
  {name:'Viernes',rooms:[[],[],[]]}
 ];
