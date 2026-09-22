@@ -1,5 +1,6 @@
-export const basePath = '/trovada';
-export const siteUrl = 'https://hector14mv.github.io/trovada/';
+/// <reference types="vite/client" />
+
+export const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
 export function assetPath(filename: string) {
   return `${basePath}/${filename.replace(/^\//, '')}`;
 }

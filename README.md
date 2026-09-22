@@ -2,7 +2,9 @@
 
 Public website for Asociación Cultural Trovada, Madrid.
 
-Website: https://hector14mv.github.io/trovada/
+Custom domain: https://actrovada.es/ (DNS setup pending).
+
+GitHub Pages fallback: https://hector14mv.github.io/trovada/
 
 ## Development
 
@@ -23,7 +25,19 @@ npm run verify:pages
 
 The build prerenders the React homepage to HTML. React hydrates the timetable tabs in the browser. GitHub Actions publishes only `dist/` to GitHub Pages on a push to `main`.
 
-GitHub Pages must use **GitHub Actions** as its publishing source. The project base path is configured in `site.config.ts`; the canonical URL is also declared in `index.html`.
+GitHub Pages must use **GitHub Actions** as its publishing source. Vite selects the base path and canonical URL in `vite.config.ts`: `/trovada/` for GitHub Pages, `/` and `https://actrovada.es/` when `VERCEL=1`. Asset links use the same Vite base during prerendering and hydration.
+
+## Vercel
+
+The Vercel project uses `vercel.json` to install, build, verify, and publish `dist/`.
+Validate the root-domain build locally with:
+
+```sh
+VERCEL=1 npm run build
+VERCEL=1 npm run verify:pages
+```
+
+The domain remains registered at DonDominio. Update only the apex website record and `www` to the values supplied by the Vercel project; preserve unrelated DNS records.
 
 ## Content
 
