@@ -1,10 +1,12 @@
 # Trovada
 
-Public website for Asociación Cultural Trovada, Madrid.
+Website for the **Asociación Cultural Trovada**, a music school (Aula-Taller) and choir in Fontarrón, Vallecas (Madrid): who they are, the 2026–27 class and rehearsal timetable, and how to reach the classroom. The site is in Spanish.
 
-Custom domain: https://actrovada.es/ (DNS setup pending).
+**Live:** <https://actrovada.es> · GitHub Pages mirror: <https://hector14mv.github.io/trovada/>
 
-GitHub Pages fallback: https://hector14mv.github.io/trovada/
+![Asociación Cultural Trovada website](docs/screenshot.jpg)
+
+Built with React 19, TypeScript, Vite and Tailwind CSS. The homepage is prerendered to static HTML, and React only hydrates the timetable tabs in the browser.
 
 ## Development
 
